@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Social media design portfolio by Kaung Htet Kyaw.">
+  <title>Social Media Design - Kaung Htet Kyaw</title>
+  <script>
+    (function () {
+      document.documentElement.classList.replace('no-js', 'js');
+      try {
+        var storedTheme = localStorage.getItem('khk-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = storedTheme || (prefersDark ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    }());
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="./index.html#top" data-cursor="Home"><span>KHK</span><small>Graphic Designer</small></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="./index.html#about" data-cursor="About">About</a>
+        <a href="./projects.html" data-cursor="Work">Projects</a>
+        <a href="./index.html#skills" data-cursor="Skills">Skills</a>
+        <a href="./index.html#contact" data-cursor="Contact">Contact</a>
+        <a class="nav-cv" href="./KaungHtetKyaw_CV.pdf" download data-cursor="CV">Download CV</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch color theme" data-cursor="Theme">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span data-theme-label>Dark</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="page-hero section-pad">
+      <p class="mono reveal">Project 01 / Social Media Design</p>
+      <h1 class="reveal">Facebook &amp; Instagram post design.</h1>
+      <p class="page-lead reveal">Campaign visuals, travel promotions, real estate posts, service ads, and daily social media assets.</p>
+    </section>
+
+    <section class="section-pad section-border">
+      <div class="gallery-grid" aria-label="Social media design gallery">
+        <button type="button" class="gallery-item" data-lightbox="./sm1.jpg" data-caption="Social Media Design - The Century" data-cursor="View"><img src="./sm1.jpg" alt="Social media design for The Century property" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm2.jpg" data-caption="Social Media Design - Air tickets and hotel booking" data-cursor="View"><img src="./sm2.jpg" alt="Air tickets and hotel booking social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm3.jpg" data-caption="Social Media Design - Study in Europe" data-cursor="View"><img src="./sm3.jpg" alt="Study in Europe social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm4.jpg" data-caption="Social Media Design - Chit Yin Pyone rewards" data-cursor="View"><img src="./sm4.jpg" alt="Van rental rewards social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm5.jpg" data-caption="Social Media Design - Drive with confidence" data-cursor="View"><img src="./sm5.jpg" alt="Car service social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm6.jpg" data-caption="Social Media Design - Travel booking" data-cursor="View"><img src="./sm6.jpg" alt="Travel booking social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm7.jpg" data-caption="Social Media Design - Visa extension" data-cursor="View"><img src="./sm7.jpg" alt="Visa extension social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm8.jpg" data-caption="Social Media Design - Car rental service" data-cursor="View"><img src="./sm8.jpg" alt="Car rental service social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm9.jpg" data-caption="Social Media Design - Study in Georgia" data-cursor="View"><img src="./sm9.jpg" alt="Study in Georgia social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm10.jpg" data-caption="Social Media Design - Travel easy" data-cursor="View"><img src="./sm10.jpg" alt="Travel payment social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm11.jpg" data-caption="Social Media Design - Everyday essentials" data-cursor="View"><img src="./sm11.jpg" alt="Promotional essentials social media design" loading="lazy"></button>
+        <button type="button" class="gallery-item" data-lightbox="./sm12.jpg" data-caption="Social Media Design - Condo sales launch" data-cursor="View"><img src="./sm12.jpg" alt="Condo sales launch social media design" loading="lazy"></button>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lightbox" data-modal aria-label="Image preview">
+    <button type="button" class="lightbox-close" data-close aria-label="Close preview">Close</button>
+    <img data-modal-image alt="">
+    <p data-modal-caption></p>
+  </dialog>
+
+  <footer class="site-footer">
+    <p>Designed by Kaung Htet Kyaw</p>
+    <p>Portfolio &mdash; Graphic Designer</p>
+    <p>KHK</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

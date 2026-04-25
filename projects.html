@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected project categories by Kaung Htet Kyaw.">
+  <title>Projects - Kaung Htet Kyaw</title>
+  <script>
+    (function () {
+      document.documentElement.classList.replace('no-js', 'js');
+      try {
+        var storedTheme = localStorage.getItem('khk-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = storedTheme || (prefersDark ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    }());
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="./index.html#top" data-cursor="Home"><span>KHK</span><small>Graphic Designer</small></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="./index.html#about" data-cursor="About">About</a>
+        <a href="./index.html#projects" data-cursor="Work">Projects</a>
+        <a href="./index.html#skills" data-cursor="Skills">Skills</a>
+        <a href="./index.html#contact" data-cursor="Contact">Contact</a>
+        <a class="nav-cv" href="./KaungHtetKyaw_CV.pdf" download data-cursor="CV">Download CV</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch color theme" data-cursor="Theme">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span data-theme-label>Dark</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="page-hero section-pad">
+      <p class="mono reveal">Selected Projects</p>
+      <h1 class="reveal">Project showcase</h1>
+      <p class="page-lead reveal">
+        Three focused categories using real portfolio images from Kaung Htet Kyaw's existing work.
+      </p>
+    </section>
+
+    <section class="section-pad section-border">
+      <div class="project-list">
+        <article class="project-row reveal">
+          <a href="./projects1.html" class="project-link" data-cursor="View">
+            <span class="project-index">01</span>
+            <span class="project-copy"><span class="project-kicker mono">Social Media Design</span><strong>Facebook &amp; Instagram post design.</strong><span>Campaign visuals and social content.</span></span>
+            <span class="project-preview" aria-hidden="true"><img src="./sm1.jpg" alt="" loading="lazy"><img src="./sm4.jpg" alt="" loading="lazy"><img src="./sm12.jpg" alt="" loading="lazy"></span>
+          </a>
+        </article>
+        <article class="project-row reveal">
+          <a href="./projects2.html" class="project-link" data-cursor="View">
+            <span class="project-index">02</span>
+            <span class="project-copy"><span class="project-kicker mono">Logo Design</span><strong>Modern brand logo concept.</strong><span>Brand marks and identity boards.</span></span>
+            <span class="project-preview" aria-hidden="true"><img src="./smm2.jpg" alt="" loading="lazy"><img src="./smm3.jpg" alt="" loading="lazy"><img src="./smm5.jpg" alt="" loading="lazy"></span>
+          </a>
+        </article>
+        <article class="project-row reveal">
+          <a href="./projects3.html" class="project-link" data-cursor="View">
+            <span class="project-index">03</span>
+            <span class="project-copy"><span class="project-kicker mono">Poster Design</span><strong>Creative marketing poster.</strong><span>Promotional and seasonal posters.</span></span>
+            <span class="project-preview" aria-hidden="true"><img src="./smmm1.jpg" alt="" loading="lazy"><img src="./smmm3.jpg" alt="" loading="lazy"><img src="./smmm7.jpg" alt="" loading="lazy"></span>
+          </a>
+        </article>
+      </div>
+
+      <div class="project-note reveal">
+        <p>Thank you for watching!</p>
+        <p>Designed by Kaung Htet Kyaw</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Designed by Kaung Htet Kyaw</p>
+    <p>Portfolio &mdash; Graphic Designer</p>
+    <p>KHK</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
